@@ -118,6 +118,59 @@ Rahul receives:
 - GUI Development using Swing
 
 
+# Expense-Tracker-with-monthly-analytics
+
+## Project Overview
+The Expense Tracker with Monthly Analytics is a Java desktop application that helps users manage and analyze their daily expenses. The application allows users to add, view, delete, and export expenses while storing the data in an SQLite database. It also provides visual insights through pie charts that display expense distribution by category.
+
+## Objective
+The objective of this project is to create a system that tracks personal expenses and provides monthly analytics using charts and reports.
+
+## Technologies Used
+- Java (Core Java)
+- Swing (GUI development)
+- SQLite (Database)
+- JDBC (Database connectivity)
+- JFreeChart (Charts and analytics)
+- Eclipse IDE
+
+## Features
+- Add new expenses
+- Delete expenses
+- View all expenses in a table
+- Store expenses in SQLite database
+- Display analytics using pie chart
+- Export expenses to CSV file
+- Refresh and update data dynamically
+
+## Project Structure
+
+ExpenseTracker
+│
+├── DBConnection.java
+├── CreateTable.java
+├── Expense.java
+├── ExpenseDAO.java
+├── ExpenseChart.java
+├── ExpenseTrackerUI.java
+├── expenses.db
+└── libraries (external jars)
+
+
+## How It Works
+1. The user enters expense details (title, category, amount, date).
+2. The application stores the data in an SQLite database using JDBC.
+3. The table displays all saved expenses.
+4. The analytics button generates a pie chart of expenses by category.
+5. The export button saves expense data to a CSV file.
+
+## How to Run
+1. Open the project in Eclipse.
+2. Run `ExpenseTrackerUI.java`.
+3. Use the GUI to add and manage expenses.
+
+
+
 # File-Compressor-and-Decompressor
 
 ## Project Overview
