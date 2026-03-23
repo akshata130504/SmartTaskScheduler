@@ -1,0 +1,6 @@
+Postman Collection Link:
+https://restless-eclipse-21381.postman.co/workspace/bc31eaf0-f707-4e51-808d-8decbea03f68/collection/42883219-a01d73c0-a870-4839-b8c8-9b917662a649?action=share&source=copy-link&creator=42883219
+
+
+Swagger UI:
+http://localhost:8080/swagger-ui/index.html
