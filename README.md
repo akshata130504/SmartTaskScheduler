@@ -1,3 +1,123 @@
+# Java-Chat-Application
+
+## Project Overview
+The Java Chat Application is a real-time messaging system built using Java Socket Programming and Swing GUI. The application follows a client-server architecture where multiple clients can connect to a server and exchange messages instantly.
+
+The system supports group messaging, private messaging, and user join/leave notifications.
+
+
+## Objective
+The objective of this project is to demonstrate networking concepts in Java by implementing a client-server chat system that enables real-time communication between multiple users.
+
+
+## Technologies Used
+
+- Java
+- Socket Programming
+- Multithreading
+- Java Swing (GUI)
+- Eclipse IDE
+
+
+## Features
+
+- Multiple clients can connect to the server
+- Real-time message broadcasting
+- Private messaging between users
+- User join and leave notifications
+- Graphical chat interface
+- Multithreaded server handling multiple clients
+
+
+## Project Structure
+
+```
+ChatApplication
+│
+├── Server.java
+├── ClientHandler.java
+├── ChatClientGUI.java
+└── README.md
+```
+
+## How It Works
+
+1. The server starts and listens for incoming client connections.
+2. Clients connect to the server using sockets.
+3. Each connected client is handled using a separate thread.
+4. Messages sent by one client are broadcast to all connected clients.
+5. Private messages can be sent using the `@username` format.
+
+Example:
+
+```
+@Rahul Hello
+```
+
+This message is only delivered to Rahul.
+
+
+## How to Run the Project
+
+### Step 1: Start the Server
+
+Run:
+
+```
+Server.java
+```
+
+Output:
+
+```
+Server started on port 5000
+```
+
+---
+
+### Step 2: Start Chat Clients
+
+Run:
+
+```
+ChatClientGUI.java
+```
+
+Enter your username when prompted.
+
+
+### Step 3: Chat with Other Users
+
+Example chat session:
+
+```
+Akshu: Hello everyone
+Rahul: Hi Akshu!
+```
+
+Private message example:
+
+```
+@Rahul Are you free?
+```
+
+Rahul receives:
+
+```
+(Private) Akshu: Are you free?
+```
+
+---
+
+## Skills Demonstrated
+
+- Java Networking
+- Socket Programming
+- Multithreading
+- Client-Server Architecture
+- GUI Development using Swing
+
+
 # File-Compressor-and-Decompressor
 
 ## Project Overview
