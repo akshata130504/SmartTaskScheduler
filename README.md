@@ -352,3 +352,100 @@ Multithreading (Timer)
 Event Handling in Swing
 
 GUI Development
+
+# RESTful-Bookstore-API
+
+## Project Overview
+The RESTful Bookstore API is a backend application developed using **Spring Boot** that allows users to manage books through REST API endpoints. The system supports operations such as adding new books, retrieving book details, deleting books, and filtering books by author. The application uses **Spring Data JPA** for database interaction and **H2 database** for storage.
+
+This project demonstrates the implementation of RESTful web services, database connectivity, and backend architecture using Java.
+
+## Objective
+The objective of this project is to build a RESTful API that can manage bookstore data and allow users to perform CRUD operations using HTTP requests.
+
+## Technologies Used
+
+- Java  
+- Spring Boot  
+- Spring Data JPA  
+- H2 Database  
+- Maven  
+- Postman (API Testing)  
+- Swagger UI (API Documentation)  
+- Eclipse IDE  
+
+## Features
+
+- Add a new book  
+- Retrieve all books  
+- Delete a book by ID  
+- Filter books by author  
+- Pagination and sorting support  
+- API testing using Postman  
+- Interactive API documentation using Swagger UI  
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|------|------|------|
+| GET | `/books` | Retrieve all books |
+| POST | `/books` | Add a new book |
+| DELETE | `/books/{id}` | Delete book by ID |
+| GET | `/books/author/{author}` | Filter books by author |
+| GET | `/books?page=0&size=5&sortBy=price` | Pagination and sorting |
+
+
+## Example JSON Request
+
+### POST `/books`
+
+```json
+{
+  "title": "Spring Boot Guide",
+  "author": "John Smith",
+  "price": 600
+}
+```
+
+
+## Swagger API Documentation
+
+After running the application, open:
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+This page provides an interactive interface to test the API endpoints.
+
+
+## Postman Collection
+
+API requests were tested using Postman.
+
+Collection Link:
+
+```
+https://restless-eclipse-21381.postman.co/workspace/My-Workspace~bc31eaf0-f707-4e51-808d-8decbea03f68/collection/42883219-a01d73c0-a870-4839-b8c8-9b917662a649
+```
+
+---
+
+## How to Run the Project
+
+1. Clone or download the project.
+2. Open the project in **Eclipse or any Java IDE**.
+3. Run the main class:
+
+```
+BookstoreApplication.java
+```
+
+4. The application will start on:
+
+```
+http://localhost:8080
+```
+
+5. Test APIs using **Postman** or **Swagger UI**.
+
