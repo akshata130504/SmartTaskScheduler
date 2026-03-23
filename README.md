@@ -1,3 +1,97 @@
+# File-Compressor-and-Decompressor
+
+## Project Overview
+The File Compressor and Decompressor is a Java-based desktop application that allows users to compress files into ZIP format and decompress ZIP files back to their original form. The application provides a simple graphical user interface using Java Swing and uses the built-in Java `java.util.zip` package for file compression and extraction.
+
+## Objective
+The objective of this project is to develop a tool that reduces file size by compressing files and allows users to extract compressed files when needed.
+
+
+## Technologies Used
+
+- Java
+- Java Swing (GUI)
+- java.util.zip package
+- Eclipse IDE
+
+
+## Features
+
+- Compress files into ZIP format
+- Decompress ZIP files
+- Simple graphical interface
+- File selection using file chooser
+- Efficient file handling using buffers
+
+
+## Project Structure
+
+```
+FileCompressor
+│
+├── FileCompressorGUI.java
+└── README.md
+```
+
+
+## How It Works
+
+1. The user selects a file using the **Compress File** button.
+2. The application reads the selected file.
+3. The file is compressed using `ZipOutputStream`.
+4. The compressed `.zip` file is saved in the same directory.
+
+For decompression:
+
+1. The user selects a `.zip` file.
+2. The application extracts the contents using `ZipInputStream`.
+3. The original file is restored in the same folder.
+
+
+## How to Run the Project
+
+1. Open the project in Eclipse or any Java IDE.
+2. Run the file:
+
+```
+FileCompressorGUI.java
+```
+
+3. Click **Compress File** to compress any file.
+4. Click **Decompress File** to extract a ZIP file.
+
+
+## Example
+
+Original file:
+
+```
+report.docx
+```
+
+Compressed file:
+
+```
+report.docx.zip
+```
+
+After decompression:
+
+```
+report.docx
+```
+
+
+## Skills Demonstrated
+
+- File handling in Java
+- Data compression using ZIP streams
+- GUI development using Swing
+- Exception handling
+
+
+
+
 # SmartTaskScheduler
 
 ## 🧠 Smart Task Scheduler with Priority Queue
